@@ -1,0 +1,39 @@
+
+# Disable directory listing
+Options -Indexes
+
+
+# Enable expirations
+ExpiresActive On
+
+# Default directive
+ExpiresDefault "access plus 1 month"
+
+# My favicon
+ExpiresByType image/x-icon "access plus 1 year"
+
+# Images
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+
+# CSS
+ExpiresByType text/css "access 1 month"
+
+# Javascript
+ExpiresByType application/javascript "access 1 month"
+
+
+AddType application/x-javascript .js
+AddType text/css .css
+
+
+SetOutputFilter DEFLATE
+ 
+SetEnvIfNoCase Request_URI \.(?:rar|zip)$ no-gzip dont-vary
+SetEnvIfNoCase Request_URI \.(?:gif|jpg|png)$ no-gzip dont-vary
+SetEnvIfNoCase Request_URI \.(?:avi|mov|mp4)$ no-gzip dont-vary
+SetEnvIfNoCase Request_URI \.mp3$ no-gzip dont-vary
+
+Header append Vary User-Agent env=!dont-vary
