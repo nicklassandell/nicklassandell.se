@@ -1,0 +1,53 @@
+html {
+	height: 100%;
+}
+body {
+	background: #0B4046;
+	font-family: 'Roboto Thin', sans-serif;
+	background: #333 url(../img/bg.jpg) no-repeat top left;
+	background-size: cover;
+	background-image: url(../img/bg.webp);
+}
+
+.container {
+	margin: 100px;
+	max-width: 1140px;
+	color: #FFF;
+}
+
+h1 {
+	font-size: 96px;
+	line-height: 1.2em;
+	margin: 0 0 1em 0;
+	font-weight: 100;
+}
+
+p {
+	margin: 0 0 20px 0;
+	font-size: 40px;
+	line-height: 1.4em;
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+	margin-left: 5px;
+	border-bottom: 1px solid rgba(255,255,255,.4);
+	color: #FFF;
+
+	&:hover {
+		color: #7CC5FF;
+	}
+}
+
+
+
+@media only screen and (max-width: 960px) {
+	.container {
+		margin: 50px;
+	}
+	p {
+		font-size: 25px;
+		font-family: 'Roboto Light', sans-serif;
+	}
+}
