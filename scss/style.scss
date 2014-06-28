@@ -4,9 +4,13 @@ html {
 body {
 	background: #0B4046;
 	font-family: 'Roboto Thin', sans-serif;
-	background: #333 url(../img/bg.jpg) no-repeat top left;
+	background: #333 no-repeat top left;
 	background-size: cover;
-	background-image: url(../img/bg.webp);
+	
+	background-image: url(../img/bg.jpg);
+	&.webp {
+		background-image: url(../img/bg.webp);
+	}
 }
 
 .container {
