@@ -3,7 +3,6 @@ html {
 }
 body {
 	background: #0B4046;
-	font-family: 'Roboto Thin', sans-serif;
 	background: #333 no-repeat top left;
 	background-size: cover;
 	
@@ -12,6 +11,12 @@ body {
 		background-image: url(../img/bg.webp);
 	}
 }
+
+body, h1 {
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+}
+
 
 .container {
 	margin: 100px;
@@ -23,14 +28,12 @@ h1 {
 	font-size: 96px;
 	line-height: 1.2em;
 	margin: 0 0 1em 0;
-	font-weight: 100;
 }
 
 p {
 	margin: 0 0 20px 0;
 	font-size: 40px;
 	line-height: 1.4em;
-	font-weight: 100;
 }
 
 a {
@@ -52,6 +55,6 @@ a {
 	}
 	p {
 		font-size: 25px;
-		font-family: 'Roboto Light', sans-serif;
+		font-weight: 300;
 	}
 }
