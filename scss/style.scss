@@ -2,14 +2,10 @@ html {
 	min-height: 100%;
 }
 body {
-	background: #0B4046;
-	background: #333 no-repeat top left;
-	background-size: cover;
-	
-	background-image: url(../img/bg.jpg);
-	&.webp {
-		background-image: url(../img/bg.webp);
-	}
+	background: #13223C;
+	-webkit-transition-duration: 3s;
+	-moz-transition-duration: 3s;
+	transition-duration: 3s;
 }
 
 body, h1 {
