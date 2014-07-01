@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 
 
 	// Header resizing
-	$("h1").fitText(1, { minFontSize: '45px', maxFontSize: '96px' });
+	$("h1").fitText(1, { minFontSize: '45px', maxFontSize: '80px' });
 
 
 	var bgTarget = $('html'),
