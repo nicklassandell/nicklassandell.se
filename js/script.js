@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 	$("h1").fitText(1, { minFontSize: '45px', maxFontSize: '96px' });
 
 
-	var bgTarget = $('body'),
+	var bgTarget = $('html'),
 		bgColors = ['#13223C', '#133C3A', '#2E411D', '#47231A', '#461A34', '#1E1A46'],
 		currBg = 0,
 		bgSwitchInterval = 3*1000;
